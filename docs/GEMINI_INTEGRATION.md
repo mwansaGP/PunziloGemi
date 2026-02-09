@@ -1,7 +1,0 @@
-# Gemini Integration Overview
-
-Punzilo uses Google’s Gemini 3 models as the core intelligence layer for grading, feedback, and adaptive learning experiences. Gemini 3’s advanced long‑context reasoning powers our essay evaluation pipeline: it ingests full student essays alongside detailed marking rubrics and returns structured scores, rubric-aligned justifications, and targeted improvement suggestions in JSON. This enables consistent, explainable grading that mirrors human markers while remaining scalable across many simultaneous exam attempts.
-
-We also rely on Gemini 3’s high-quality text generation to create formative feedback, rewrite explanations at different difficulty levels, and provide scaffolding hints without giving away full answers. Its strong multilingual understanding allows the same grading logic and feedback flows to work across languages, supporting learners in both English and local languages without separate rule sets.
-
-Tool- and schema-following capabilities are central to the application architecture. Gemini 3 is prompted to strictly follow our Essay Grading Rulebook and return outputs in predefined schemas that downstream services can safely consume. This makes it possible to plug Gemini into our Supabase-backed workflows for exams, topic practice, and study plans, while keeping the system deterministic, auditable, and easy to extend as we add new assessment types and learning experiences.
